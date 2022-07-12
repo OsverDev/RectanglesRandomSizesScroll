@@ -15,10 +15,12 @@ struct ContentView: View {
                 Rectangle()
                     .fill(LinearGradient(gradient: Gradient(colors: [.blue, .white]), startPoint: .center, endPoint: .bottomTrailing))
                     .cornerRadius(20)
-                    .frame(height: Double.random(in: 200...300))
+                    .shadow(color: .gray, radius: 05, x: 10, y: 10)
+                    .frame(width: UIScreen.main.bounds.width/100*95, height: Double.random(in: 200...300))
                     
             }
-            }.frame(width: UIScreen.main.bounds.width/10*9,  alignment: .center)
+            }.frame(width: UIScreen.main.bounds.width/10*10,  alignment: .center)
+                .ignoresSafeArea()
         }
     }
 }
